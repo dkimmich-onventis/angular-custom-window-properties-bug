@@ -5,3 +5,10 @@ import { AppModule } from './app/app.module';
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+declare global {
+  interface Window {
+    one?: number | null;
+    two?: number | null;
+  }
+}
